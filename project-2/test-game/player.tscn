@@ -7,16 +7,18 @@
 size = Vector2(127.5, 128)
 
 [node name="Player" type="Node2D"]
-scale = Vector2(0.5, 0.5)
+position = Vector2(100, 100)
+scale = Vector2(0.503672, 0.498412)
 script = ExtResource("1_onrkg")
+speed = 550
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2(2, 2158)
+scale = Vector2(1.00268, 1.00935)
+disable_mode = 2
+gravity_scale = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(674, -1466)
 shape = SubResource("RectangleShape2D_4flbx")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(678, 698)
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
 texture = ExtResource("1_4flbx")
